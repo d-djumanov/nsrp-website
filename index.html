@@ -9,6 +9,18 @@
   gtag('js', new Date());
   gtag('config', 'AW-18516811066');
 </script>
+<script>
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest && e.target.closest('a[href]');
+    if (!link) return;
+    var href = link.getAttribute('href');
+    if (href.indexOf('mailto:') === 0) {
+      gtag('event', 'conversion', {'send_to': 'AW-18516811066/1wcFCILNs6UdELq6wP1E', 'transport_type': 'beacon'});
+    } else if (href.indexOf('wa.me/') !== -1 || href.indexOf('api.whatsapp.com') !== -1) {
+      gtag('event', 'conversion', {'send_to': 'AW-18516811066/WT4YCJS7sqUdELq6wP1E', 'transport_type': 'beacon'});
+    }
+  });
+</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Northern Star Regulatory Partners — nsrp.uz</title>
@@ -241,7 +253,7 @@ nav.scrolled { background: rgba(251,250,246,.93); backdrop-filter: blur(14px); -
 .contact-headline em { font-style: italic; color: var(--gold-light); }
 .contact-note { font-size: .88rem; line-height: 1.74; color: rgba(251,250,246,.52); font-weight: 300; max-width: 46ch; }
 .contact-note + .contact-note { margin-top: 12px; }
-.contact-cta { margin-top: 36px; }
+.contact-cta { margin-top: 36px; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
 .contact-details { display: flex; flex-direction: column; }
 .contact-row { display: flex; flex-direction: column; gap: 4px; padding: 22px 0; border-bottom: 1px solid rgba(200,163,90,.12); }
 .contact-row:last-child { border-bottom: none; }
@@ -517,7 +529,7 @@ section[id], .strip { scroll-margin-top: 72px; }
         <h2 class="contact-headline reveal reveal-d1">Every engagement<br />begins with<br /><em>a frank conversation.</em></h2>
         <p class="contact-note reveal reveal-d2">We do not publish pricing. Each engagement is assessed individually, based on product type, dossier complexity, and the pathway selected. Reach Zulayho directly for regulatory enquiries, or Jorabek for commercial discussions.</p>
         <p class="contact-note reveal reveal-d2">We respond to all enquiries within four business hours during Tashkent working hours.</p>
-        <div class="contact-cta reveal reveal-d3"><a href="mailto:zulayho@nsrp.uz" class="btn-primary">Send an Enquiry <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+        <div class="contact-cta reveal reveal-d3"><a href="mailto:zulayho@nsrp.uz?cc=jorabek@nsrp.uz&amp;subject=Enquiry%20via%20nsrp.uz" class="btn-primary">Send an Enquiry <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><a href="https://wa.me/998776394939" class="btn-ghost" target="_blank" rel="noopener">WhatsApp: +998 77 639 49 39</a></div>
       </div>
       <div class="contact-details">
         <div class="contact-row reveal"><span class="contact-label">Regulatory Enquiries</span><span class="contact-value"><a href="mailto:zulayho@nsrp.uz">zulayho@nsrp.uz</a></span></div>
