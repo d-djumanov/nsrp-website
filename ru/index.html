@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18516811066"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18516811066');
+</script>
+<script>
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest && e.target.closest('a[href]');
+    if (!link) return;
+    var href = link.getAttribute('href');
+    if (href.indexOf('mailto:') === 0) {
+      gtag('event', 'conversion', {'send_to': 'AW-18516811066/1wcFCILNs6UdELq6wP1E', 'transport_type': 'beacon'});
+    } else if (href.indexOf('wa.me/') !== -1 || href.indexOf('api.whatsapp.com') !== -1) {
+      gtag('event', 'conversion', {'send_to': 'AW-18516811066/WT4YCJS7sqUdELq6wP1E', 'transport_type': 'beacon'});
+    }
+  });
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Northern Star Regulatory Partners — регистрация лекарственных средств в Узбекистане</title>
+<link rel="icon" type="image/jpeg" href="../assets/logo.jpg" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon-n.svg" />
+<link rel="alternate" hreflang="en" href="https://nsrp.uz/" />
+<link rel="alternate" hreflang="ru" href="https://nsrp.uz/ru/" />
+<link rel="alternate" hreflang="x-default" href="https://nsrp.uz/" />
+<meta name="description" content="NSRP — консалтинговая компания в сфере фармацевтического регулирования, Ташкент, Узбекистан. Регистрация лекарственных средств, ведение регистрационного досье и пострегистрационное сопровождение." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --navy:        #1a3358;
+  --navy-deep:   #0f2240;
+  --navy-ink:    #010023;
+  --gold:        #c8a35a;
+  --gold-light:  #d9ba7e;
+  --cream:       #fbfaf6;
+  --cream-dark:  #f3f1ea;
+  --ink:         #1a2332;
+  --slate:       #4a5568;
+  --slate-light: #6b7a8f;
+  --hairline:    rgba(26,51,88,.13);
+  --hairline-gold: rgba(200,163,90,.28);
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans:  "Onest", "DM Sans", system-ui, sans-serif;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); background: var(--cream); color: var(--ink); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+.container { width: min(1160px, 92vw); margin: 0 auto; }
+.eyebrow { font-family: var(--sans); font-size: .7rem; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .9s var(--ease-out), transform .9s var(--ease-out); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: .12s; }
+.reveal-d2 { transition-delay: .24s; }
+.reveal-d3 { transition-delay: .36s; }
+.reveal-d4 { transition-delay: .48s; }
+
+/* SCROLL PROGRESS */
+.scroll-progress { position: fixed; top: 0; left: 0; height: 2px; background: var(--gold); z-index: 200; width: 0%; transition: width .1s linear; }
+
+/* NAV */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: background .4s, box-shadow .4s; }
+nav.scrolled { background: rgba(251,250,246,.93); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: 0 1px 0 var(--hairline); }
+.nav-inner { display: flex; justify-content: space-between; align-items: center; height: 72px; gap: 20px; }
+.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.nav-logo-img { width: 38px; height: 38px; border-radius: 4px; object-fit: contain; background: var(--navy-ink); flex-shrink: 0; }
+.nav-logo-text .abbr { font-family: var(--serif); font-size: 1rem; font-weight: 600; letter-spacing: .25em; color: var(--navy); display: block; line-height: 1; }
+.nav-logo-text .full { font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; color: var(--slate-light); margin-top: 4px; display: block; }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a { font-size: .78rem; font-weight: 500; letter-spacing: .05em; color: var(--navy); text-decoration: none; opacity: .7; transition: opacity .2s; }
+.nav-links a:hover { opacity: 1; }
+.nav-lang { display: flex; align-items: center; gap: 6px; margin-right: auto; font-size: .72rem; font-weight: 500; letter-spacing: .1em; color: var(--cream); }
+.nav-lang a { color: var(--cream); text-decoration: none; opacity: .55; transition: opacity .2s, color .2s; }
+.nav-lang a:hover { opacity: 1; color: var(--gold); }
+.nav-lang .is-current { color: var(--gold); }
+.nav-lang-sep { opacity: .3; }
+nav.scrolled .nav-lang, nav.scrolled .nav-lang a { color: var(--navy); }
+nav.scrolled .nav-lang .is-current { color: var(--gold); }
+.nav-cta { display: inline-flex !important; align-items: center; gap: 8px; padding: 10px 22px !important; background: var(--navy) !important; color: var(--cream) !important; font-size: .75rem !important; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; opacity: 1 !important; transition: background .25s !important; }
+.nav-cta:hover { background: var(--navy-deep) !important; }
+.nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
+.nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--navy); }
+@media (max-width: 820px) {
+  .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+  nav.menu-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; background: var(--cream); padding: 20px 6vw 28px; border-bottom: 1px solid var(--hairline); gap: 18px; }
+  nav.menu-open .nav-links a { font-size: .92rem; opacity: 1; }
+}
+
+/* HERO */
+.hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; position: relative; }
+.hero-left { background: var(--navy-ink); padding: 140px 56px 80px 7vw; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+.hero-left::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 20% 70%, rgba(200,163,90,.07) 0%, transparent 65%), radial-gradient(1px 1px at 25% 30%, rgba(200,163,90,.5) 0%, transparent), radial-gradient(1px 1px at 70% 20%, rgba(200,163,90,.3) 0%, transparent), radial-gradient(1px 1px at 55% 75%, rgba(200,163,90,.4) 0%, transparent), radial-gradient(1px 1px at 85% 60%, rgba(200,163,90,.25) 0%, transparent); pointer-events: none; }
+.hero-eyebrow { color: var(--gold); margin-bottom: 28px; position: relative; }
+.hero-headline { font-family: var(--serif); font-size: clamp(2.4rem, 4vw, 4rem); font-weight: 300; line-height: 1.07; color: var(--cream); max-width: 14ch; margin-bottom: 28px; position: relative; }
+.hero-headline em { font-style: italic; color: var(--gold-light); }
+.hero-rule { width: 36px; height: 1px; background: var(--gold); margin-bottom: 24px; position: relative; }
+.hero-lead { color: rgba(251,250,246,.68); font-size: .95rem; line-height: 1.78; max-width: 46ch; font-weight: 300; margin-bottom: 44px; position: relative; }
+.hero-cta-group { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; position: relative; }
+.btn-primary { display: inline-flex; align-items: center; gap: 10px; padding: 14px 30px; background: var(--gold); color: var(--navy-ink); font-family: var(--sans); font-size: .78rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; transition: background .25s, transform .2s; }
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+.btn-ghost { font-size: .78rem; font-weight: 400; letter-spacing: .05em; color: rgba(251,250,246,.55); text-decoration: none; border-bottom: 1px solid rgba(251,250,246,.2); padding-bottom: 2px; transition: color .2s, border-color .2s; }
+.btn-ghost:hover { color: rgba(251,250,246,.9); border-color: rgba(251,250,246,.5); }
+.hero-right { background: var(--cream); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 140px 7vw 80px 56px; position: relative; gap: 32px; }
+.hero-right::before { content: ""; position: absolute; top: 10%; bottom: 10%; left: -1px; width: 1px; background: linear-gradient(180deg, transparent, var(--hairline-gold) 30%, var(--hairline-gold) 70%, transparent); }
+.hero-logo-wrap { width: min(300px, 75%); aspect-ratio: 1/1; border-radius: 8px; overflow: hidden; background: var(--navy-ink); box-shadow: 0 28px 70px rgba(1,0,35,.2), 0 6px 20px rgba(1,0,35,.1); animation: float 7s ease-in-out infinite; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.hero-logo-wrap img { width: 100%; height: 100%; object-fit: contain; }
+.hero-tagline { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: var(--slate); text-align: center; max-width: 34ch; line-height: 1.58; }
+.hero-metrics { display: flex; gap: 36px; align-items: center; }
+.metric { text-align: center; }
+.metric-num { font-family: var(--serif); font-size: clamp(1.1rem, 5.2vw, 1.7rem); font-weight: 300; color: var(--navy); line-height: 1; white-space: nowrap; }
+.metric-label { font-size: .63rem; letter-spacing: .12em; text-transform: uppercase; color: var(--slate-light); margin-top: 5px; }
+.hero-divider { width: 1px; height: 44px; background: var(--hairline); }
+@media (max-width: 920px) {
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-left { padding: 120px 7vw 60px; min-height: 70vh; }
+  .hero-right { padding: 60px 7vw 80px; }
+  .hero-metrics { gap: clamp(12px, 4vw, 20px); }
+  .hero-right::before { display: none; }
+}
+
+/* STRIP */
+.strip { background: var(--navy); padding: 20px 0; overflow: hidden; }
+.strip-inner { display: flex; gap: 56px; align-items: center; white-space: nowrap; animation: marquee 28s linear infinite; }
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.strip-item { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.strip-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+.strip-text { font-family: var(--serif); font-size: .95rem; font-style: italic; color: rgba(251,250,246,.7); }
+
+/* SECTIONS */
+.section { padding: 96px 0; }
+.section-header { margin-bottom: 60px; }
+.section-title { font-family: var(--serif); font-size: clamp(2rem, 3.2vw, 3rem); font-weight: 300; line-height: 1.1; color: var(--navy); max-width: 24ch; margin-top: 14px; }
+.section-title em { font-style: italic; color: var(--gold); }
+
+/* SERVICES */
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); }
+.service-item { background: var(--cream); padding: 40px 34px 44px; transition: background .3s; }
+.service-item:hover { background: #f1efe5; }
+.service-num { font-family: var(--serif); font-size: 2.2rem; font-weight: 300; color: var(--gold); opacity: .4; line-height: 1; margin-bottom: 18px; }
+.service-title { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; color: var(--navy); line-height: 1.25; margin-bottom: 12px; }
+.service-desc { font-size: .88rem; line-height: 1.74; color: var(--slate); font-weight: 300; }
+.service-rule { width: 22px; height: 1px; background: var(--gold); margin-top: 20px; transition: width .3s; }
+.service-item:hover .service-rule { width: 40px; }
+@media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 580px) { .services-grid { grid-template-columns: 1fr; } }
+
+/* APPROACH */
+.approach { background: var(--navy-ink); padding: 96px 0; position: relative; overflow: hidden; }
+.approach::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 90% 40%, rgba(200,163,90,.07) 0%, transparent 65%); pointer-events: none; }
+.approach-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 72px; align-items: start; }
+.approach-left .eyebrow { color: var(--gold); margin-bottom: 20px; }
+.approach-statement { font-family: var(--serif); font-size: clamp(1.8rem, 2.8vw, 2.8rem); font-weight: 300; line-height: 1.12; color: var(--cream); margin-bottom: 28px; }
+.approach-statement em { font-style: italic; color: var(--gold-light); }
+.approach-body { font-size: .9rem; line-height: 1.78; color: rgba(251,250,246,.58); font-weight: 300; max-width: 52ch; }
+.approach-body + .approach-body { margin-top: 14px; }
+.approach-pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(200,163,90,.12); border: 1px solid rgba(200,163,90,.12); margin-top: 40px; }
+.pillar { background: rgba(255,255,255,.025); padding: 26px 22px; transition: background .3s; }
+.pillar:hover { background: rgba(255,255,255,.05); }
+.pillar-title { font-size: .65rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.pillar-text { font-size: .85rem; line-height: 1.65; color: rgba(251,250,246,.52); font-weight: 300; }
+.approach-quote { border-left: 2px solid var(--gold); padding: 36px 40px; background: rgba(200,163,90,.04); }
+.approach-quote blockquote { font-family: var(--serif); font-size: 1.42rem; font-style: italic; font-weight: 300; line-height: 1.52; color: rgba(251,250,246,.82); margin-bottom: 20px; }
+.approach-quote cite { font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); font-style: normal; }
+@media (max-width: 900px) { .approach-grid { grid-template-columns: 1fr; gap: 48px; } }
+
+/* ============================================================
+   PROCESS MAP SECTION
+   ============================================================ */
+.process-section { background: var(--cream-dark); padding: 96px 0 0; overflow: hidden; }
+.process-section .section-header { padding: 0 0 0; margin-bottom: 48px; }
+
+/* Embedded process map styles */
+.nsrp-process { max-width: 100%; margin: 0; padding: 0 0 80px; position: relative; }
+.nsrp-process-header { text-align: center; max-width: 720px; margin: 0 auto 56px; }
+.nsrp-eyebrow { font-family: var(--sans); font-size: .7rem; letter-spacing: .2em; color: var(--gold); text-transform: uppercase; font-weight: 500; margin-bottom: 18px; }
+.nsrp-title { font-family: var(--serif); font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 300; line-height: 1.1; color: var(--navy); margin-bottom: 8px; }
+.nsrp-title em { font-style: italic; color: var(--gold); }
+.nsrp-rule { width: 40px; height: 1px; background: var(--gold); margin: 20px auto; }
+.nsrp-lede { font-size: .92rem; line-height: 1.75; color: var(--slate); font-weight: 300; }
+.nsrp-legend { display: flex; justify-content: center; gap: 36px; margin: 40px 0 48px; padding: 16px 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); flex-wrap: wrap; }
+.nsrp-legend-item { display: flex; align-items: center; gap: 10px; font-size: .65rem; letter-spacing: .15em; text-transform: uppercase; color: var(--slate); font-weight: 500; }
+.nsrp-legend-dot { width: 13px; height: 13px; border-radius: 50%; border: 2px solid var(--gold); background: white; }
+.nsrp-legend-dot.gate { background: var(--gold); border-color: var(--gold); position: relative; }
+.nsrp-legend-dot.gate::after { content: ''; position: absolute; inset: -4px; border-radius: 50%; border: 1.5px solid var(--gold); opacity: 0.4; animation: pulse 2.4s ease-out infinite; }
+.nsrp-legend-dot.terminus { background: var(--navy); border-color: var(--navy); }
+@keyframes pulse { 0% { transform: scale(1); opacity: 0.5; } 100% { transform: scale(1.6); opacity: 0; } }
+
+/* Desktop horizontal timeline */
+@media (min-width: 900px) {
+  .nsrp-timeline { overflow-x: auto; overflow-y: visible; padding: 0 0 32px; scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
+  .nsrp-timeline::-webkit-scrollbar { height: 5px; }
+  .nsrp-timeline::-webkit-scrollbar-track { background: transparent; }
+  .nsrp-timeline::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; opacity: .4; }
+  .nsrp-track { display: flex; align-items: stretch; gap: 8px; padding: 24px 7vw 32px; position: relative; min-width: max-content; }
+  .nsrp-track::before { content: ''; position: absolute; top: 132px; left: 7vw; right: 7vw; height: 2px; background-image: linear-gradient(to right, var(--gold) 0%, var(--gold) 50%, transparent 50%, transparent 100%); background-size: 14px 2px; z-index: 0; }
+  .nsrp-track::after { content: ''; position: absolute; top: 132px; left: 7vw; width: var(--rail-progress, 0%); max-width: calc(100% - 14vw); height: 2px; background: var(--gold); z-index: 1; transition: width 0.4s ease; pointer-events: none; }
+  .nsrp-stage { flex: 0 0 230px; position: relative; padding: 0 6px; scroll-snap-align: start; display: flex; flex-direction: column; align-items: center; z-index: 2; }
+  .nsrp-stage-meta { order: 1; width: 100%; text-align: center; margin-bottom: 14px; min-height: 44px; }
+  .nsrp-node-wrap { order: 2; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 2; }
+  .nsrp-card { order: 3; width: 100%; margin-top: 22px; }
+}
+
+/* Mobile vertical timeline */
+@media (max-width: 899px) {
+  .nsrp-track { display: flex; flex-direction: column; gap: 0; position: relative; padding: 0 7vw; }
+  .nsrp-track::before { content: ''; position: absolute; top: 32px; bottom: 32px; left: calc(7vw + 31px); width: 2px; background-image: linear-gradient(to bottom, var(--gold) 0%, var(--gold) 50%, transparent 50%, transparent 100%); background-size: 2px 12px; z-index: 0; }
+  .nsrp-track::after { content: ''; position: absolute; top: 32px; left: calc(7vw + 31px); width: 2px; height: var(--rail-progress, 0%); max-height: calc(100% - 64px); background: var(--gold); z-index: 1; transition: height 0.5s ease; pointer-events: none; }
+  .nsrp-stage { display: grid; grid-template-columns: 56px 28px 1fr; gap: 12px; padding: 12px 0; align-items: start; position: relative; z-index: 2; }
+  .nsrp-stage-meta { grid-column: 1; text-align: right; padding-top: 6px; }
+  .nsrp-node-wrap { grid-column: 2; display: flex; justify-content: center; padding-top: 4px; }
+  .nsrp-card { grid-column: 3; }
+  .nsrp-node { width: 36px !important; height: 36px !important; font-size: 13px !important; }
+}
+
+.nsrp-days { font-family: var(--serif); font-size: 1.6rem; font-weight: 300; color: var(--navy); line-height: 1; }
+.nsrp-days-unit { font-size: .6rem; letter-spacing: .15em; text-transform: uppercase; color: var(--slate-light); margin-top: 3px; }
+.nsrp-node { width: 52px; height: 52px; border-radius: 50%; border: 2px solid var(--gold); background: white; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: .95rem; font-weight: 500; color: var(--navy); position: relative; z-index: 2; transition: all .3s; cursor: default; }
+.nsrp-node.gate { background: var(--gold); color: var(--navy-ink); border-color: var(--gold); }
+.nsrp-node.gate::after { content: ''; position: absolute; inset: -5px; border-radius: 50%; border: 1.5px solid var(--gold); opacity: .35; animation: pulse 2.4s ease-out infinite; }
+.nsrp-node.terminus-end { background: var(--navy); color: var(--gold); border-color: var(--navy); font-size: 1.1rem; }
+.nsrp-card { background: white; border: 1px solid var(--hairline); padding: 18px 20px; border-radius: 2px; opacity: 0; transform: translateY(14px); transition: opacity .5s var(--ease-out), transform .5s var(--ease-out), box-shadow .3s; }
+.nsrp-stage.is-visible .nsrp-card { opacity: 1; transform: translateY(0); }
+.nsrp-card:hover { box-shadow: 0 6px 20px rgba(26,51,88,.1); }
+.nsrp-roman { font-size: .6rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: 7px; font-weight: 500; }
+.nsrp-card h3 { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; color: var(--navy); line-height: 1.25; margin-bottom: 8px; }
+.nsrp-card p { font-size: .82rem; line-height: 1.65; color: var(--slate); font-weight: 300; }
+.nsrp-note { margin-top: 10px; padding: 8px 12px; background: rgba(200,163,90,.07); border-left: 2px solid var(--gold); font-size: .78rem; line-height: 1.55; color: var(--slate); font-style: italic; font-weight: 300; }
+.nsrp-scroll-hint { text-align: center; font-size: .65rem; letter-spacing: .18em; text-transform: uppercase; color: var(--slate-light); padding: 12px 0 0; }
+@media (max-width: 899px) { .nsrp-scroll-hint { display: none; } }
+.nsrp-footer-note { margin: 40px 7vw 0; padding: 28px 32px; border: 1px solid var(--hairline-gold); background: white; }
+.nsrp-footer-note .label { font-size: .65rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; font-weight: 500; }
+.nsrp-footer-note p { font-size: .88rem; line-height: 1.72; color: var(--slate); font-weight: 300; }
+
+/* ABOUT */
+.about { padding: 96px 0; background: var(--cream); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; }
+.founder-card { border-top: 1px solid var(--hairline-gold); padding-top: 32px; }
+.founder-role { font-size: .65rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.founder-name { font-family: var(--serif); font-size: 1.9rem; font-weight: 400; color: var(--navy); line-height: 1.1; margin-bottom: 6px; }
+.founder-title { font-size: .8rem; font-weight: 500; letter-spacing: .04em; color: var(--slate); margin-bottom: 18px; }
+.founder-bio { font-size: .88rem; line-height: 1.78; color: var(--slate); font-weight: 300; }
+.founder-contact { margin-top: 22px; display: inline-flex; align-items: center; gap: 8px; font-size: .76rem; font-weight: 500; letter-spacing: .04em; color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--hairline-gold); padding-bottom: 2px; transition: color .2s, border-color .2s; }
+.founder-contact:hover { color: var(--gold); border-color: var(--gold); }
+@media (max-width: 780px) { .about-grid { grid-template-columns: 1fr; gap: 44px; } }
+
+/* CONTACT */
+.contact { background: var(--navy); padding: 96px 0; position: relative; overflow: hidden; }
+.contact::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 100% 50%, rgba(200,163,90,.07) 0%, transparent 65%); pointer-events: none; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+.contact-left .eyebrow { color: var(--gold); margin-bottom: 20px; }
+.contact-headline { font-family: var(--serif); font-size: clamp(2rem, 3vw, 2.9rem); font-weight: 300; color: var(--cream); line-height: 1.12; margin-bottom: 22px; }
+.contact-headline em { font-style: italic; color: var(--gold-light); }
+.contact-note { font-size: .88rem; line-height: 1.74; color: rgba(251,250,246,.52); font-weight: 300; max-width: 46ch; }
+.contact-note + .contact-note { margin-top: 12px; }
+.contact-cta { margin-top: 36px; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+.contact-details { display: flex; flex-direction: column; }
+.contact-row { display: flex; flex-direction: column; gap: 4px; padding: 22px 0; border-bottom: 1px solid rgba(200,163,90,.12); }
+.contact-row:last-child { border-bottom: none; }
+.contact-label { font-size: .63rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+.contact-value { font-family: var(--serif); font-size: 1.05rem; color: var(--cream); font-weight: 300; margin-top: 4px; }
+.contact-value a { color: inherit; text-decoration: none; transition: color .2s; }
+.contact-value a:hover { color: var(--gold-light); }
+@media (max-width: 780px) { .contact-grid { grid-template-columns: 1fr; gap: 48px; } }
+
+/* FOOTER */
+footer { background: var(--navy-ink); padding: 28px 0; border-top: 1px solid rgba(200,163,90,.12); }
+.footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.footer-brand { font-family: var(--serif); font-size: .82rem; letter-spacing: .08em; color: rgba(251,250,246,.38); }
+.footer-links { display: flex; gap: 28px; list-style: none; }
+.footer-links a { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: rgba(251,250,246,.3); text-decoration: none; transition: color .2s; }
+.footer-links a:hover { color: var(--gold); }
+
+section[id], .strip { scroll-margin-top: 72px; }
+@media (max-width: 480px) { .btn-primary { letter-spacing: .04em; } }
+</style>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="container nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="../assets/logo.jpg" alt="NSRP" class="nav-logo-img" />
+      <div class="nav-logo-text">
+        <span class="abbr">NSRP</span>
+        <span class="full">Northern Star Regulatory Partners</span>
+      </div>
+    </a>
+    <div class="nav-lang" aria-label="Язык"><a href="../" hreflang="en" lang="en">EN</a><span class="nav-lang-sep">|</span><span class="is-current" aria-current="page">RU</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#approach">Наш подход</a></li>
+      <li><a href="#process">Процедура</a></li>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#contact" class="nav-cta">
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        Связаться с нами
+      </a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Открыть меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <p class="eyebrow hero-eyebrow reveal">Регуляторный консалтинг в фармацевтике&nbsp;&mdash; Ташкент</p>
+    <h1 class="hero-headline reveal reveal-d1">Регуляторная определённость&nbsp;&mdash;<br /><em>от подачи досье<br />до&nbsp;регистрационного удостоверения.</em></h1>
+    <div class="hero-rule reveal reveal-d2"></div>
+    <p class="hero-lead reveal reveal-d2">NSRP&nbsp;&mdash; бутиковая консалтинговая компания, специализирующаяся на регистрации лекарственных средств в Узбекистане; проекты ведут специалисты с многолетним опытом. Мы сопровождаем весь процесс&nbsp;&mdash; стратегию, регистрационное досье, взаимодействие с регуляторными органами и пострегистрационный период&nbsp;&mdash; в рамках единого ответственного партнёрства.</p>
+    <div class="hero-cta-group reveal reveal-d3">
+      <a href="#contact" class="btn-primary">Запросить консультацию <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#services" class="btn-ghost">Наши услуги &darr;</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-logo-wrap reveal reveal-d1"><img src="../assets/logo.jpg" alt="Northern Star Regulatory Partners" /></div>
+    <p class="hero-tagline reveal reveal-d2"><em>Регистрационная процедура&nbsp;&mdash; не лабиринт, а последовательность этапов. Хорошо подготовленную последовательность можно спланировать, ясно изложить и уверенно пройти.</em></p>
+    <div class="hero-metrics reveal reveal-d3">
+      <div class="metric"><div class="metric-num">12</div><div class="metric-label">Этапов</div></div>
+      <div class="hero-divider"></div>
+      <div class="metric"><div class="metric-num">RU &middot; EN &middot; UZ</div><div class="metric-label">Три языка</div></div>
+      <div class="hero-divider"></div>
+      <div class="metric"><div class="metric-num">0</div><div class="metric-label">Сюрпризов</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE STRIP -->
+<div class="strip" aria-hidden="true">
+  <div class="strip-inner">
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Прогнозируемые сроки</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Работаем на трёх языках</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Без неожиданностей</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Каждый проект ведут опытные специалисты.</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Ташкент, Узбекистан</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Прогнозируемые сроки</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Работаем на трёх языках</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Без неожиданностей</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Каждый проект ведут опытные специалисты.</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Ташкент, Узбекистан</span></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow reveal">Чем мы занимаемся</p>
+      <h2 class="section-title reveal reveal-d1">От первичной оценки<br />до <em>стабильного присутствия на рынке.</em></h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-item reveal"><div class="service-num">01</div><h3 class="service-title">Регистрация лекарственных средств</h3><p class="service-desc">Полный цикл регистрации лекарственных средств в Узбекистане: от выбора регистрационного пути и подготовки досье до взаимодействия с регуляторным органом и получения регистрационного удостоверения. Мы сопровождаем все двенадцать этапов процедуры от имени держателя регистрационного удостоверения.</p><div class="service-rule"></div></div>
+      <div class="service-item reveal reveal-d1"><div class="service-num">02</div><h3 class="service-title">Изделия медицинского назначения и медицинская техника</h3><p class="service-desc">Регистрация изделий медицинского назначения и медицинской техники в соответствии с законодательством Республики Узбекистан. Мы консультируем по вопросам классификации, готовим комплекты регистрационных документов и координируем техническую экспертизу с профильными государственными органами.</p><div class="service-rule"></div></div>
+      <div class="service-item reveal reveal-d2"><div class="service-num">03</div><h3 class="service-title">Сопровождение исследований биоэквивалентности</h3><p class="service-desc">Регуляторный консалтинг и координация досье для воспроизведённых лекарственных препаратов (дженериков), для которых требуются данные о биоэквивалентности. NSRP отвечает за регуляторную часть; исследования проводят партнёрские контрактные исследовательские организации.</p><div class="service-rule"></div></div>
+      <div class="service-item reveal reveal-d1"><div class="service-num">04</div><h3 class="service-title">БАД / биологически активные добавки</h3><p class="service-desc">Регистрация биологически активных добавок к пище (БАД) в соответствии с санитарным законодательством Республики Узбекистан. Мы консультируем по вопросам маркировки, соответствия состава установленным требованиям и порядка подачи документов как для отечественной, так и для импортируемой продукции.</p><div class="service-rule"></div></div>
+      <div class="service-item reveal reveal-d2"><div class="service-num">05</div><h3 class="service-title">Регистрация товарных знаков</h3><p class="service-desc">Подача заявок и ведение дел по регистрации товарных знаков фармацевтической продукции в Агентстве по интеллектуальной собственности Республики Узбекистан. Взаимодействие с нашими партнёрами&nbsp;&mdash; специалистами в области интеллектуальной собственности&nbsp;&mdash; обеспечивает защиту вашего бренда до регистрации препарата и параллельно с ней.</p><div class="service-rule"></div></div>
+      <div class="service-item reveal reveal-d3"><div class="service-num">06</div><h3 class="service-title">Пострегистрационное сопровождение</h3><p class="service-desc">Внесение изменений в регистрационное досье, перерегистрация, обновление маркировки и изменения в производстве на протяжении всего жизненного цикла зарегистрированного препарата. Непрерывное регуляторное сопровождение на постоянной основе, а не серия разовых запросов.</p><div class="service-rule"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="approach" id="approach">
+  <div class="container">
+    <div class="approach-grid">
+      <div class="approach-left">
+        <p class="eyebrow reveal">Подход Northern Star</p>
+        <h2 class="approach-statement reveal reveal-d1">Мы предлагаем<br /><em>определённость,</em><br />а не бумажную работу.</h2>
+        <p class="approach-body reveal reveal-d2">Регистрация лекарственных средств в Узбекистане проходит двенадцать формальных этапов, которые регулирует Центр безопасности фармацевтической продукции. Сама по себе процедура несложна. Сложно другое&nbsp;&mdash; каждый раз выполнять её точно и ясно информировать о ней клиента.</p>
+        <p class="approach-body reveal reveal-d2">Каждый проект NSRP лично возглавляет руководитель нашего регуляторного направления. Мы не работаем по принципу конвейера. Мы выступаем старшим партнёром: оцениваем ваш продукт, выбираем оптимальный регистрационный путь и несём ответственность за результат на всех этапах.</p>
+        <div class="approach-pillars reveal reveal-d3">
+          <div class="pillar"><div class="pillar-title">Прогнозируемые сроки</div><div class="pillar-text">Контрольные точки определяются в начале проекта, отчёт по ним предоставляется в письменном виде. При изменении нормативных сроков вы узнаёте об этом первыми.</div></div>
+          <div class="pillar"><div class="pillar-title">Три рабочих языка</div><div class="pillar-text">Мы работаем на русском, английском и узбекском языках. Материалы готовятся на удобном для вас языке, поэтому никакая информация не теряется при передаче между Ташкентом и головным офисом.</div></div>
+          <div class="pillar"><div class="pillar-title">Прямой доступ</div><div class="pillar-text">С партнёрами компании можно связаться напрямую. Решения принимают те, кто несёт за них ответственность,&nbsp;&mdash; они не передаются младшим сотрудникам.</div></div>
+          <div class="pillar"><div class="pillar-title">Оптимизация регистрационного пути</div><div class="pillar-text">До подачи досье мы оцениваем возможность применения упрощённых процедур признания и ускоренной регистрации. При соответствии критериям сроки и затраты могут быть существенно сокращены.</div></div>
+        </div>
+      </div>
+      <div class="approach-right">
+        <div class="approach-quote reveal reveal-d2">
+          <blockquote>&laquo;Регистрационная процедура&nbsp;&mdash; не лабиринт, а последовательность этапов. Хорошо подготовленную последовательность можно спланировать, ясно изложить и уверенно пройти от начала до конца.&raquo;</blockquote>
+          <cite>&mdash; Northern Star Regulatory Partners</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS MAP -->
+<section class="process-section" id="process">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow">Процедура регистрации</p>
+      <h2 class="section-title reveal reveal-d1">Двенадцать этапов&nbsp;&mdash;<br /><em>от подачи досье до&nbsp;регистрационного удостоверения.</em></h2>
+    </div>
+  </div>
+
+  <section class="nsrp-process">
+    <div class="nsrp-process-header container">
+      <p class="nsrp-eyebrow">Общий порядок&nbsp;&mdash; Республика Узбекистан</p>
+      <p class="nsrp-lede">Регистрация иностранного лекарственного средства в Узбекистане проходит двенадцать формальных этапов, которые проводит Центр безопасности фармацевтической продукции. Для каждого этапа установлен нормативный срок. Ниже приведена последовательность этапов, применимая к большинству иностранных препаратов, с пояснением того, как NSRP сопровождает каждый этап от имени клиента.</p>
+      <div class="nsrp-rule"></div>
+      <div class="nsrp-legend">
+        <div class="nsrp-legend-item"><div class="nsrp-legend-dot"></div>Стандартный этап</div>
+        <div class="nsrp-legend-item"><div class="nsrp-legend-dot gate"></div>Этап принятия решения</div>
+        <div class="nsrp-legend-item"><div class="nsrp-legend-dot terminus"></div>Выдача удостоверения</div>
+      </div>
+    </div>
+
+    <div class="nsrp-timeline" id="nsrp-timeline">
+      <div class="nsrp-track" id="nsrp-track">
+
+        <div class="nsrp-stage" data-stage="1">
+          <div class="nsrp-stage-meta"><div class="nsrp-days">45</div><div class="nsrp-days-unit">дней</div></div>
+          <div class="nsrp-node-wrap"><div class="nsrp-node">I</div></div>
+          <div class="nsrp-card"><div class="nsrp-roman">Этап I</div><h3>Подача досье и оплата</h3><p>Заявитель загружает полное регистрационное досье в официальную электронную систему и оплачивает государственные регистрационные сборы. С этого момента процедура считается официально начатой.</p><div class="nsrp-note">Мы готовим, проверяем и подаём полное досье от имени держателя регистрационного удостоверения.</div></div>
+        </div>
+
+        <div class="nsrp-stage" data-stage="2">
+          <div class="nsrp-stage-meta"><div class="nsrp-days">30</div><div class="nsrp-days-unit">дней</div></div>
+          <div class="nsrp-node-wrap"><div class="nsrp-node gate">II</div></div>
+          <div class="nsrp-card"><div class="nsrp-roman">Этап II &middot; Первая точка принятия решения</div><h3>Первичная экспертиза</h3><p>Формальная проверка комплектности и подлинности представленных документов. Это процедурная проверка, а не научная оценка.</p><div class="nsrp-note">Перед подачей мы сверяем комплектность документов с актуальным перечнем требований регуляторного органа.</div></div>
+        </div>
+
+        <div class="nsrp-stage" data-stage="3">
+          <div class="nsrp-stage-meta"><div class="nsrp-days">90</div><div class="nsrp-days-unit">не более</div></div>
+          <div class="nsrp-node-wrap"><div class="nsrp-node">III</div></div>
+          <div class="nsrp-card"><div class="nsrp-roman">Этап III</div><h3>Срок устранения замечаний <em style="color:#8a6f2e;font-weight:300;">(при необходимости)</em></h3><p>При выявлении недостатков заявителю предоставляется до девяноста дней для устранения замечаний регуляторного органа.</p><div class="nsrp-note">Если требуется устранение замечаний, наша команда в течение нескольких дней готовит и направляет ответ.</div></div>
+        </div>
+
+        <div class="nsrp-stage" data-stage="4">
+          <div class="nsrp-stage-meta"><div class="nsrp-days">75</div><div class="nsrp-days-unit">дней</div></div>
+          <div class="nsrp-node-wrap"><div class="nsrp-node">IV</div></div>
+          <div class="nsrp-card"><div class="nsrp-roman">Этап IV</div><h3>Лабораторные испытания</h3><p>Испытания качества по показателям подлинности, чистоты, количественного содержания, растворения и параметров лекарственной формы в уполномоченной государственной лаборатории.</p><div class="nsrp-note">Мы координируем доставку образцов, таможенное оформление и подготовку сопроводительной документации для анализа.</div></div>
+        </div>
+
+        <div class="nsrp-stage" data-stage="5">
+          <div class="nsrp-stage-meta"><div class="nsrp-days">&mdash;</div><div class="nsrp-days-unit">в общем сроке</div></div>
+          <div class="nsrp-node-wrap"><div class="nsrp-node">V</div></div>
+          <div class="nsrp-card"><div class="nsrp-roman">Этап V</div><h3>Решение об инспекции GMP</h3><p>Определение необходимости инспектирования производственной площадки на соответствие требованиям надлежащей производственной практики (GMP).</p><div class="nsrp-note">Мы оцениваем вероятность инспекции в начале проекта и заблаговременно готовим к ней команду производственной площадки.</div></div>
+        </div>
+
+        <div class="nsrp-stage is-gate" data-stage="6">
+          <div class="nsrp-stage-meta"><div class="nsrp-days">90</div><div class="nsrp-days-unit">дней</div></div>
+          <div class="nsrp-node-wrap"><div class="nsrp-node gate">VI</div></div>
+          <div class="nsrp-card"><div class="nsrp-roman">Этап VI &middot; Вторая точка принятия решения</div><h3>Специализированная научная экспертиза</h3><p>Качество, эффективность и безопасность препарата оценивают научные комиссии, состоящие из профильных экспертов.</p><div class="nsrp-note">Наша регуляторная команда оперативно отвечает на научные запросы, поступающие в ходе экспертизы.</div></div>
+        </div>
+
+        <div class="nsrp-stage" data-stage="7">
+          <div class="nsrp-stage-meta"><div class="nsrp-days">90</div><div class="nsrp-days-unit">дней</div></div>
+          <div class="nsrp-node-wrap"><div class="nsrp-node">VII</div></div>
+          <div class="nsrp-card"><div class="nsrp-roman">Этап VII</div><h3>Оценка клинических исследований</h3><p>Для воспроизведённых препаратов оценивается биоэквивалентность; для оригинальных препаратов рассматриваются полные клинические данные.</p><div class="nsrp-note">До подачи досье мы консультируем по дизайну исследований с учётом требований регуляторного органа.</div></div>
+        </div>
+
+        <div class="nsrp-stage" data-stage="8">
+          <div class="nsrp-stage-meta"><div class="nsrp-days">&mdash;</div><div class="nsrp-days-unit">в рамках</div></div>
+          <div class="nsrp-node-wrap"><div class="nsrp-node">VIII</div></div>
+          <div class="nsrp-card"><div class="nsrp-roman">Этап VIII</div><h3>Итоговое заключение научной комиссии</h3><p>Результаты экспертизы сводятся в официальное экспертное заключение, которое служит технической основой для последующих решений.</p><div class="nsrp-note">Мы получаем и анализируем заключение, чтобы заранее выявить вопросы, которые могут возникнуть на следующих уровнях рассмотрения.</div></div>
+        </div>
+
+        <div class="nsrp-stage is-gate" data-stage="9">
+          <div class="nsrp-stage-meta"><div class="nsrp-days">15</div><div class="nsrp-days-unit">дней</div></div>
+          <div class="nsrp-node-wrap"><div class="nsrp-node gate">IX</div></div>
+          <div class="nsrp-card"><div class="nsrp-roman">Этап IX &middot; Третья точка принятия решения</div><h3>Рассмотрение на президиумах комитетов</h3><p>Члены президиумов выносят официальную рекомендацию о регистрации препарата или об отказе в ней.</p><div class="nsrp-note">При выявлении недостатков мы координируем подготовку ответа в рамках нового срока устранения замечаний.</div></div>
+        </div>
+
+        <div class="nsrp-stage is-gate" data-stage="10">
+          <div class="nsrp-stage-meta"><div class="nsrp-days">&mdash;</div><div class="nsrp-days-unit">по графику</div></div>
+          <div class="nsrp-node-wrap"><div class="nsrp-node gate">X</div></div>
+          <div class="nsrp-card"><div class="nsrp-roman">Этап X &middot; Итоговая точка принятия решения</div><h3>Передача на рассмотрение Экспертного совета</h3><p>Рекомендацию рассматривает Экспертный совет&nbsp;&mdash; высший коллегиальный орган регулятора, принимающий решения о государственной регистрации.</p><div class="nsrp-note">Перед заседанием Совета мы предоставляем клиенту письменную аналитическую записку.</div></div>
+        </div>
+
+        <div class="nsrp-stage" data-stage="11">
+          <div class="nsrp-stage-meta"><div class="nsrp-days">&mdash;</div><div class="nsrp-days-unit">если нужно</div></div>
+          <div class="nsrp-node-wrap"><div class="nsrp-node">XI</div></div>
+          <div class="nsrp-card"><div class="nsrp-roman">Этап XI</div><h3>Фармацевтическая инспекция и сертификат GMP</h3><p>Национальный сертификат GMP выдаётся в случае, если была проведена инспекция производственной площадки.</p><div class="nsrp-note">Мы сопровождаем производственную площадку при подготовке к инспекции и выполнении корректирующих действий.</div></div>
+        </div>
+
+        <div class="nsrp-stage is-end" data-stage="12">
+          <div class="nsrp-stage-meta"><div class="nsrp-days">5 лет</div><div class="nsrp-days-unit">в силе</div></div>
+          <div class="nsrp-node-wrap"><div class="nsrp-node terminus-end">&#9733;</div></div>
+          <div class="nsrp-card"><div class="nsrp-roman">Этап XII &middot; Выдача</div><h3>Регистрационное удостоверение</h3><p>Препарат вносится в Государственный реестр лекарственных средств Республики Узбекистан.</p><div class="nsrp-note">Мы передаём клиенту регистрационное удостоверение вместе с полным комплектом документов по процедуре.</div></div>
+        </div>
+
+      </div>
+      <div class="nsrp-scroll-hint">&larr; Прокрутите, чтобы пройти все этапы &rarr;</div>
+    </div>
+
+    <div class="nsrp-footer-note">
+      <div class="label">О регистрационных путях</div>
+      <p>Описанный общий порядок применяется к большинству иностранных препаратов. Если препарат прошёл преквалификацию Всемирной организации здравоохранения или одобрен регуляторным органом из признанного перечня, упрощённая процедура признания может существенно сократить эти сроки. Мы оцениваем такую возможность в начале каждого проекта.</p>
+    </div>
+  </section>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <p class="eyebrow reveal">Партнёры</p>
+    <h2 class="section-title reveal reveal-d1">Опыт и экспертиза&nbsp;&mdash;<br /><em>с личным участием.</em></h2>
+    <div class="about-grid">
+      <div class="founder-card reveal reveal-d1">
+        <div class="founder-role">Управляющий директор, руководитель регуляторного направления</div>
+        <div class="founder-name">Зулайхо Юлдошева</div>
+        <div class="founder-title">Соучредитель&nbsp;&mdash; руководитель по регуляторным вопросам</div>
+        <p class="founder-bio">Зулайхо обладает глубокой экспертизой в области фармацевтического регулирования в Узбекистане и на рынке Центральной Азии в целом. Она лично руководит каждым клиентским проектом: определяет стратегию по досье, ведёт взаимодействие с регуляторными органами и координирует научную экспертизу. Её профессиональные связи охватывают государственную регуляторную систему, клинические исследовательские учреждения и региональную фармацевтическую отрасль&nbsp;&mdash; они сложились за годы руководящей практики на этом рынке.</p>
+        <a href="mailto:zulayho@nsrp.uz" class="founder-contact"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>zulayho@nsrp.uz</a>
+      </div>
+      <div class="founder-card reveal reveal-d2">
+        <div class="founder-role">Операционный директор, директор по развитию бизнеса</div>
+        <div class="founder-name">Джурабек Джуманов</div>
+        <div class="founder-title">Соучредитель&nbsp;&mdash; руководитель операционной деятельности</div>
+        <p class="founder-bio">Джурабек отвечает за работу с клиентами, коммерческие условия сотрудничества и операционную деятельность NSRP. За его плечами девять лет международного профессионального опыта в Бостоне, Лос-Анджелесе и Сан-Франциско, который сформировал его клиентоориентированный подход на основе стандартов премиального сервиса и управленческих практик. Он руководит технологической инфраструктурой, на которой построены системы отчётности NSRP, и ведёт все переговоры о коммерческих условиях и стоимости услуг от имени компании.</p>
+        <a href="mailto:jorabek@nsrp.uz" class="founder-contact"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-02 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>jorabek@nsrp.uz</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <p class="eyebrow reveal">Начните диалог</p>
+        <h2 class="contact-headline reveal reveal-d1">Каждый проект<br />начинается<br /><em>с откровенного разговора.</em></h2>
+        <p class="contact-note reveal reveal-d2">Мы не публикуем цены. Стоимость каждого проекта определяется индивидуально с учётом типа продукта, сложности досье и выбранного регистрационного пути. По регуляторным вопросам обращайтесь напрямую к Зулайхо, по коммерческим&nbsp;&mdash; к Джурабеку.</p>
+        <p class="contact-note reveal reveal-d2">Мы отвечаем на все запросы в течение четырёх рабочих часов по ташкентскому времени.</p>
+        <div class="contact-cta reveal reveal-d3"><a href="mailto:zulayho@nsrp.uz?cc=jorabek@nsrp.uz&amp;subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20nsrp.uz%2Fru" class="btn-primary">Отправить запрос <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><a href="https://wa.me/998776394939?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20nsrp.uz%2Fru%20%D0%BF%D0%BE%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%83%20%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8." class="btn-ghost" target="_blank" rel="noopener">WhatsApp: +998 77 639 49 39</a></div>
+      </div>
+      <div class="contact-details">
+        <div class="contact-row reveal"><span class="contact-label">Регуляторные вопросы</span><span class="contact-value"><a href="mailto:zulayho@nsrp.uz">zulayho@nsrp.uz</a></span></div>
+        <div class="contact-row reveal reveal-d1"><span class="contact-label">Коммерческие вопросы</span><span class="contact-value"><a href="mailto:jorabek@nsrp.uz">jorabek@nsrp.uz</a></span></div>
+        <div class="contact-row reveal reveal-d2"><span class="contact-label">Общие вопросы</span><span class="contact-value"><a href="mailto:info@nsrp.uz">info@nsrp.uz</a></span></div>
+        <div class="contact-row reveal reveal-d3"><span class="contact-label">Сайт</span><span class="contact-value">nsrp.uz</span></div>
+        <div class="contact-row reveal reveal-d4"><span class="contact-label">Офис</span><span class="contact-value">Ташкент, Узбекистан</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-brand">Northern Star Regulatory Partners&nbsp;&mdash; nsrp.uz</span>
+    <ul class="footer-links">
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#process">Процедура</a></li>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+// Scroll progress
+const prog = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+  const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+  prog.style.width = Math.min(pct, 100) + '%';
+}, { passive: true });
+
+// Nav scroll state
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 50);
+}, { passive: true });
+
+// Mobile hamburger
+const hamburger = document.getElementById('navHamburger');
+hamburger.addEventListener('click', () => nav.classList.toggle('menu-open'));
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => nav.classList.remove('menu-open'));
+});
+
+// Scroll reveal
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// Hero reveals on load
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => { document.querySelectorAll('.hero .reveal').forEach(el => el.classList.add('visible')); }, 80);
+});
+
+// Process map: stage card reveals
+(function() {
+  const timeline = document.getElementById('nsrp-timeline');
+  const track = document.getElementById('nsrp-track');
+  const stages = document.querySelectorAll('.nsrp-stage');
+  const isDesktop = () => window.matchMedia('(min-width: 900px)').matches;
+
+  const stageObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const idx = parseInt(entry.target.dataset.stage, 10);
+        setTimeout(() => { entry.target.classList.add('is-visible'); }, isDesktop() ? 0 : idx * 60);
+        stageObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+  stages.forEach(s => stageObserver.observe(s));
+
+  function updateRail() {
+    if (!track) return;
+    if (isDesktop() && timeline) {
+      const scrollLeft = timeline.scrollLeft;
+      const maxScroll = timeline.scrollWidth - timeline.clientWidth;
+      const progress = maxScroll > 0 ? (scrollLeft / maxScroll) : 0;
+      track.style.setProperty('--rail-progress', (progress * 100) + '%');
+    } else {
+      const rect = track.getBoundingClientRect();
+      const viewportH = window.innerHeight;
+      let progress = 0;
+      if (rect.top < viewportH * 0.5) {
+        progress = Math.min(1, Math.max(0, (viewportH * 0.5 - rect.top) / rect.height));
+      }
+      track.style.setProperty('--rail-progress', (progress * 100) + '%');
+    }
+  }
+
+  if (timeline) timeline.addEventListener('scroll', updateRail, { passive: true });
+  window.addEventListener('scroll', updateRail, { passive: true });
+  window.addEventListener('resize', updateRail);
+  updateRail();
+})();
+</script>
+</body>
+</html>

@@ -26,6 +26,9 @@
 <title>Northern Star Regulatory Partners — nsrp.uz</title>
 <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
 <link rel="icon" type="image/svg+xml" href="assets/favicon-n.svg" />
+<link rel="alternate" hreflang="en" href="https://nsrp.uz/" />
+<link rel="alternate" hreflang="ru" href="https://nsrp.uz/ru/" />
+<link rel="alternate" hreflang="x-default" href="https://nsrp.uz/" />
 <meta name="description" content="NSRP is a senior pharmaceutical regulatory consultancy in Tashkent, Uzbekistan. Drug registration, dossier management, and post-approval lifecycle support." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -76,6 +79,13 @@ nav.scrolled { background: rgba(251,250,246,.93); backdrop-filter: blur(14px); -
 .nav-links { display: flex; gap: 28px; list-style: none; }
 .nav-links a { font-size: .78rem; font-weight: 500; letter-spacing: .05em; color: var(--navy); text-decoration: none; opacity: .7; transition: opacity .2s; }
 .nav-links a:hover { opacity: 1; }
+.nav-lang { display: flex; align-items: center; gap: 6px; margin-right: auto; font-size: .72rem; font-weight: 500; letter-spacing: .1em; color: var(--cream); }
+.nav-lang a { color: var(--cream); text-decoration: none; opacity: .55; transition: opacity .2s, color .2s; }
+.nav-lang a:hover { opacity: 1; color: var(--gold); }
+.nav-lang .is-current { color: var(--gold); }
+.nav-lang-sep { opacity: .3; }
+nav.scrolled .nav-lang, nav.scrolled .nav-lang a { color: var(--navy); }
+nav.scrolled .nav-lang .is-current { color: var(--gold); }
 .nav-cta { display: inline-flex !important; align-items: center; gap: 8px; padding: 10px 22px !important; background: var(--navy) !important; color: var(--cream) !important; font-size: .75rem !important; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; opacity: 1 !important; transition: background .25s !important; }
 .nav-cta:hover { background: var(--navy-deep) !important; }
 .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
@@ -109,13 +119,14 @@ nav.scrolled { background: rgba(251,250,246,.93); backdrop-filter: blur(14px); -
 .hero-tagline { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: var(--slate); text-align: center; max-width: 34ch; line-height: 1.58; }
 .hero-metrics { display: flex; gap: 36px; align-items: center; }
 .metric { text-align: center; }
-.metric-num { font-family: var(--serif); font-size: 1.7rem; font-weight: 300; color: var(--navy); line-height: 1; }
+.metric-num { font-family: var(--serif); font-size: clamp(1.1rem, 5.2vw, 1.7rem); font-weight: 300; color: var(--navy); line-height: 1; white-space: nowrap; }
 .metric-label { font-size: .63rem; letter-spacing: .12em; text-transform: uppercase; color: var(--slate-light); margin-top: 5px; }
 .hero-divider { width: 1px; height: 44px; background: var(--hairline); }
 @media (max-width: 920px) {
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-left { padding: 120px 7vw 60px; min-height: 70vh; }
   .hero-right { padding: 60px 7vw 80px; }
+  .hero-metrics { gap: clamp(12px, 4vw, 20px); }
   .hero-right::before { display: none; }
 }
 
@@ -288,6 +299,7 @@ section[id], .strip { scroll-margin-top: 72px; }
         <span class="full">Northern Star Regulatory Partners</span>
       </div>
     </a>
+    <div class="nav-lang" aria-label="Language"><span class="is-current" aria-current="page">EN</span><span class="nav-lang-sep">|</span><a href="ru/" hreflang="ru" lang="ru">RU</a></div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#services">Services</a></li>
       <li><a href="#approach">Our Approach</a></li>
@@ -322,7 +334,7 @@ section[id], .strip { scroll-margin-top: 72px; }
     <div class="hero-metrics reveal reveal-d3">
       <div class="metric"><div class="metric-num">12</div><div class="metric-label">Formal Stages</div></div>
       <div class="hero-divider"></div>
-      <div class="metric"><div class="metric-num">EN &middot; RU</div><div class="metric-label">Bilingual</div></div>
+      <div class="metric"><div class="metric-num">EN &middot; RU &middot; UZ</div><div class="metric-label">Three languages</div></div>
       <div class="hero-divider"></div>
       <div class="metric"><div class="metric-num">0</div><div class="metric-label">Surprises</div></div>
     </div>
@@ -333,12 +345,12 @@ section[id], .strip { scroll-margin-top: 72px; }
 <div class="strip" aria-hidden="true">
   <div class="strip-inner">
     <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Predictable timelines</span></div>
-    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Bilingual reporting</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Working in three languages</span></div>
     <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">No surprises</span></div>
     <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Senior-led. Every engagement.</span></div>
     <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Tashkent, Uzbekistan</span></div>
     <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Predictable timelines</span></div>
-    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Bilingual reporting</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Working in three languages</span></div>
     <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">No surprises</span></div>
     <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Senior-led. Every engagement.</span></div>
     <div class="strip-item"><div class="strip-dot"></div><span class="strip-text">Tashkent, Uzbekistan</span></div>
@@ -374,7 +386,7 @@ section[id], .strip { scroll-margin-top: 72px; }
         <p class="approach-body reveal reveal-d2">Every NSRP engagement is led personally by our Head of Regulatory Affairs. We do not operate as a processing house. We operate as a senior partner: assessing your product, selecting the optimal pathway, and holding accountability for outcomes throughout.</p>
         <div class="approach-pillars reveal reveal-d3">
           <div class="pillar"><div class="pillar-title">Predictable Timelines</div><div class="pillar-text">Defined milestones at engagement outset. Written reporting against them. When statutory windows shift, you are the first to know.</div></div>
-          <div class="pillar"><div class="pillar-title">Bilingual Reporting</div><div class="pillar-text">All deliverables in English, with Russian versions on request. No information lost in translation between Tashkent and headquarters.</div></div>
+          <div class="pillar"><div class="pillar-title">Three Working Languages</div><div class="pillar-text">We work in Russian, English and Uzbek. Materials are prepared in whichever language suits you, so nothing is lost between Tashkent and head office.</div></div>
           <div class="pillar"><div class="pillar-title">Direct Access</div><div class="pillar-text">Principals are reachable directly. Decisions are made by those accountable for them &mdash; not delegated to junior associates.</div></div>
           <div class="pillar"><div class="pillar-title">Pathway Optimisation</div><div class="pillar-text">Before any submission, we assess simplified recognition routes and expedited pathways. Where eligible, time and cost can be materially reduced.</div></div>
         </div>
