@@ -265,13 +265,14 @@ SERVICES = [
         },
     },
     {
+        # TODO(Zulayho): confirm that the official product category covers perfumes.
         "slug": "cosmetics",
         "en": {
-            "name": "Cosmetics",
-            "short": "Import and production permits for cosmetic and personal-care products.",
+            "name": "Cosmetics & perfumery",
+            "short": "Import and production permits for cosmetic, perfumery and personal-care products.",
             "scope_h": "Ready for the shelf, <em>in the right order.</em>",
             "scope": [
-                ("Product review", "Composition and ingredients checked against the current requirements."),
+                ("Product review", "Composition and ingredients of cosmetics and perfumery products checked against the current requirements."),
                 ("Labelling", "Labelling must include information in the state (Uzbek) language. We check and prepare the label texts."),
                 ("Documents and filing", "Specification, safety or registration certificate from the country of manufacture and the application — prepared and filed on your behalf."),
                 ("Laboratory assessment", "We coordinate the toxicological and hygienic assessment at an accredited laboratory before filing."),
@@ -280,11 +281,11 @@ SERVICES = [
             "facts_note": "The statutory review is 15 working days; in practice up to 1 month. A toxicological and hygienic assessment at an accredited laboratory is done before filing (2–4 weeks depending on composition) and is not counted in the review. Overall: 1–3 months.",
         },
         "ru": {
-            "name": "Косметическая продукция",
+            "name": "Косметика и парфюмерия",
             "short": "Разрешения на ввоз и производство парфюмерно-косметической продукции.",
             "scope_h": "На полку — <em>в правильном порядке.</em>",
             "scope": [
-                ("Проверка продукта", "Проверяем состав и ингредиенты на соответствие актуальным требованиям."),
+                ("Проверка продукта", "Проверяем состав и ингредиенты косметики и парфюмерии на соответствие актуальным требованиям."),
                 ("Маркировка", "Маркировка должна содержать сведения на государственном (узбекском) языке. Проверяем и готовим тексты маркировки."),
                 ("Документы и подача", "Спецификация, сертификат безопасности или свидетельство о регистрации в стране производителя и заявление — готовим и подаём от вашего имени."),
                 ("Лабораторная оценка", "Координируем токсиколого-гигиеническую оценку в аккредитованной лаборатории до подачи."),
@@ -586,13 +587,13 @@ SEO = {
     },
     "cosmetics": {
         "en": {
-            "title": "Cosmetics Registration in Uzbekistan — Import Permit | NSRP",
-            "desc": "Cosmetics registration in Uzbekistan: the import and production permit, composition review, labelling, laboratory assessment and the documents to import cosmetics to Uzbekistan.",
-            "h1": "Cosmetics permits in Uzbekistan",
-            "lead": "Import and production permits for imported and domestic cosmetics. We prepare everything needed to import cosmetics to Uzbekistan and place them on the market.",
+            "title": "Cosmetics and Perfumery Registration in Uzbekistan — Import Permit | NSRP",
+            "desc": "Cosmetics and perfumery registration in Uzbekistan: the import and production permit, composition review, labelling, laboratory assessment and the documents to import cosmetics and perfumes to Uzbekistan.",
+            "h1": "Cosmetics and perfumery permits in Uzbekistan",
+            "lead": "Import and production permits for imported and domestic cosmetics and perfumery products. We prepare everything needed to import cosmetics and perfumes to Uzbekistan and place them on the market.",
             "faq": [
-                ("Which document do cosmetics need in Uzbekistan?", A5["en"]),
-                ("What documents are needed to import cosmetics to Uzbekistan?",
+                ("Which document do cosmetics and perfumes need in Uzbekistan?", A5["en"]),
+                ("What documents are needed to import cosmetics and perfumes to Uzbekistan?",
                  "Application; packaging or artwork with information in the state language; specification with composition, intended use and limits; safety certificate or registration certificate from the country of manufacture; toxicological and hygienic assessment report from an accredited laboratory. Local manufacturing additionally requires international or national standards, plus a process instruction and formulation approved by the Chief State Sanitary Doctor."),
                 ("Do labels need to be in Uzbek?",
                  "Labelling must include information in the state (Uzbek) language."),
@@ -601,13 +602,13 @@ SEO = {
             ],
         },
         "ru": {
-            "title": "Регистрация косметики в Узбекистане — разрешение на ввоз | NSRP",
-            "desc": "Регистрация косметики в Узбекистане: разрешение на ввоз и производство, проверка состава, маркировка, лабораторная оценка и документы для ввоза.",
-            "h1": "Разрешение на косметику в Узбекистане",
-            "lead": "Разрешения на ввоз и производство косметики — для импортной и отечественной продукции. Готовим всё необходимое для ввоза и продажи в Узбекистане.",
+            "title": "Регистрация косметики и парфюмерии в Узбекистане — разрешение на ввоз | NSRP",
+            "desc": "Регистрация косметики и парфюмерии в Узбекистане: разрешение на ввоз и производство, проверка состава, маркировка, лабораторная оценка и документы для ввоза.",
+            "h1": "Разрешение на косметику и парфюмерию в Узбекистане",
+            "lead": "Разрешения на ввоз и производство косметики и парфюмерии — для импортной и отечественной продукции. Готовим всё необходимое для ввоза и продажи в Узбекистане.",
             "faq": [
-                ("Какой документ нужен для косметики?", A5["ru"]),
-                ("Какие документы нужны для ввоза косметики?",
+                ("Какой документ нужен для косметики и парфюмерии?", A5["ru"]),
+                ("Какие документы нужны для ввоза косметики и парфюмерии?",
                  "Заявление; упаковка или её макет со сведениями на государственном языке; спецификация с составом, областью применения и нормами; сертификат безопасности или свидетельство о регистрации в стране производителя; токсиколого-гигиеническое заключение аккредитованной лаборатории. Для производства в Узбекистане дополнительно нужны международные или национальные стандарты, а также технологическая инструкция и рецептура, согласованные с Главным государственным санитарным врачом."),
                 ("Должна ли маркировка быть на узбекском языке?",
                  "Маркировка должна содержать сведения на государственном (узбекском) языке."),
