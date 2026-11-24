@@ -22,7 +22,10 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://nsrp.uz"
 WHATSAPP = "https://wa.me/998776394939"
 WHATSAPP_DISPLAY = "+998 77 639 49 39"
-EMAIL = "info@nsrp.uz"
+# Email buttons and the footer write to Jorabek with Zulayho in copy.
+EMAIL = "jorabek@nsrp.uz"
+EMAIL_CC = "zulayho@nsrp.uz"
+MAILTO = f"mailto:{EMAIL}?cc={EMAIL_CC}"
 LINKEDIN_COMPANY = "https://www.linkedin.com/company/nsrp-uz"
 # Homepage hero photo: WebP at 1200/1800/2268 (the source's native width) plus a
 # JPG fallback, each under ~400 KB. A gradient fallback is shown until they exist.
@@ -806,7 +809,7 @@ HOME = {
         "founders_h": "Senior expertise, <em>personally engaged.</em>",
         "contact_eyebrow": "Contact",
         "contact_h": "Every engagement begins with <em>a frank conversation.</em>",
-        "rows": [("Regulatory questions", "zulayho@nsrp.uz"), ("Commercial questions", "jorabek@nsrp.uz"), ("General enquiries", "info@nsrp.uz")],
+        "rows": [("Regulatory questions", "zulayho@nsrp.uz"), ("Commercial questions", "jorabek@nsrp.uz")],
         "office": "Office",
     },
     "ru": {
@@ -836,7 +839,7 @@ HOME = {
         "founders_h": "Опыт и экспертиза — <em>с личным участием.</em>",
         "contact_eyebrow": "Контакты",
         "contact_h": "Каждый проект начинается <em>с откровенного разговора.</em>",
-        "rows": [("Регуляторные вопросы", "zulayho@nsrp.uz"), ("Коммерческие вопросы", "jorabek@nsrp.uz"), ("Общие вопросы", "info@nsrp.uz")],
+        "rows": [("Регуляторные вопросы", "zulayho@nsrp.uz"), ("Коммерческие вопросы", "jorabek@nsrp.uz")],
         "office": "Офис",
     },
 }
@@ -904,8 +907,9 @@ def wa_link(lang, name=None):
 
 def mail_link(lang, name=None):
     if not name:
-        return f"mailto:{EMAIL}"
-    return f"mailto:{EMAIL}?subject={quote(UI[lang]['mail_quote'].format(name=name))}"
+        return MAILTO
+    # &amp; is the HTML-escaped "&"; the browser and the conversion script see "&subject=".
+    return f"{MAILTO}&amp;subject={quote(UI[lang]['mail_quote'].format(name=name))}"
 
 
 def contact_buttons(lang, name=None, dark=True):
@@ -1025,7 +1029,7 @@ def footer(lang):
         <h2>{t['contacts']}</h2>
         <ul class="footer-contact">
           <li><a class="footer-wa" href="{WHATSAPP}" target="_blank" rel="noopener">{icon('chat')}<span><span class="footer-label">WhatsApp</span><span class="tel">{WHATSAPP_DISPLAY}</span></span></a></li>
-          <li><a href="mailto:{EMAIL}">{icon('mail')}{EMAIL}</a></li>
+          <li><a href="{MAILTO}">{icon('mail')}{EMAIL}</a></li>
           <li><a href="{LINKEDIN_COMPANY}" target="_blank" rel="noopener">{icon('linkedin')}LinkedIn</a></li>
           <li>{t['location']}</li>
         </ul>
