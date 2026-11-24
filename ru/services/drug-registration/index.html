@@ -18,6 +18,7 @@
     var href = link.getAttribute('href');
     if (href.indexOf('mailto:') === 0) {
       gtag('event', 'conversion', {'send_to': 'AW-18516811066/1wcFCILNs6UdELq6wP1E', 'transport_type': 'beacon'});
+      if (typeof gtag === 'function') gtag('event', 'email_click', {'link_url': href});
     } else if (href.indexOf('wa.me/') !== -1 || href.indexOf('api.whatsapp.com') !== -1) {
       gtag('event', 'conversion', {'send_to': 'AW-18516811066/WT4YCJS7sqUdELq6wP1E', 'transport_type': 'beacon'});
     }

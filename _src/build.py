@@ -34,6 +34,8 @@ HAS_HERO_PHOTO = all((ROOT / "assets" / f).exists() for f in HERO_FILES)
 
 # Google tag + click-conversion script. Copied verbatim from the original site;
 # do not edit. Analytics is connected through this tag — no separate GA4 config.
+# Only addition: the GA4 email_click event on mailto: (WhatsApp is already
+# recorded by GA4 as whatsapp_click, so no event is added for wa.me).
 TRACKING = """<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18516811066"></script>
 <script>
@@ -49,6 +51,7 @@ TRACKING = """<!-- Google tag (gtag.js) -->
     var href = link.getAttribute('href');
     if (href.indexOf('mailto:') === 0) {
       gtag('event', 'conversion', {'send_to': 'AW-18516811066/1wcFCILNs6UdELq6wP1E', 'transport_type': 'beacon'});
+      if (typeof gtag === 'function') gtag('event', 'email_click', {'link_url': href});
     } else if (href.indexOf('wa.me/') !== -1 || href.indexOf('api.whatsapp.com') !== -1) {
       gtag('event', 'conversion', {'send_to': 'AW-18516811066/WT4YCJS7sqUdELq6wP1E', 'transport_type': 'beacon'});
     }
