@@ -1304,6 +1304,9 @@ def sitemap(paths):
             + "\n".join(entries) + "\n</urlset>\n")
 
 
+GSC_FILE = "googlebfd87cdc8efc7a9f.html"
+
+
 def main():
     if (ROOT / ".nojekyll").exists():
         raise SystemExit(".nojekyll found: GitHub Pages would then publish _src/ (build.py and the TODO notes). Remove it.")
@@ -1314,7 +1317,9 @@ def main():
         for s in SERVICES:
             written.append(write(lang, f"/services/{s['slug']}/", render_service(lang, s)))
     (ROOT / "sitemap.xml").write_text(sitemap(paths), encoding="utf-8", newline="\n")
-    print(f"Built {len(written)} pages + sitemap.xml")
+    # Google Search Console ownership file; must stay at the site root and out of the sitemap.
+    (ROOT / GSC_FILE).write_text(f"google-site-verification: {GSC_FILE}", encoding="utf-8", newline="\n")
+    print(f"Built {len(written)} pages + sitemap.xml + {GSC_FILE}")
     for f in FOUNDERS:
         if not (ROOT / f["photo"]).exists():
             print(f"  missing photo: {f['photo']} (showing initials)")
