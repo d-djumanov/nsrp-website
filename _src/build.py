@@ -897,7 +897,9 @@ def url(lang, path):
 
 
 def asset_version(name):
-    return hashlib.md5((ROOT / "assets" / name).read_bytes()).hexdigest()[:8]
+    # Normalise CRLF so a Windows checkout gives the same hash as the LF file in git.
+    data = (ROOT / "assets" / name).read_bytes().replace(b"\r\n", b"\n")
+    return hashlib.md5(data).hexdigest()[:8]
 
 
 def wa_link(lang, name=None):
