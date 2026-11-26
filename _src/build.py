@@ -69,6 +69,7 @@ UI = {
         "services": "Services",
         "how": "How it works",
         "founders": "Founders",
+        "about": "About",
         "contact": "Contact us",
         "menu": "Menu",
         "whatsapp": "WhatsApp",
@@ -83,7 +84,7 @@ UI = {
         "company": "Company",
         "contacts": "Contact",
         "ga": "This site uses Google Analytics to understand visits.",
-        "tagline": "Predictable registration — from dossier submission to approval.",
+        "tagline": "Registration done properly — from dossier submission to approval.",
         "other_services": "Other services",
         "other_h": "Looking for something else?",
         "faq_eyebrow": "FAQ",
@@ -96,6 +97,7 @@ UI = {
         "services": "Услуги",
         "how": "Как мы работаем",
         "founders": "Основатели",
+        "about": "О компании",
         "contact": "Связаться с нами",
         "menu": "Меню",
         "whatsapp": "WhatsApp",
@@ -110,7 +112,7 @@ UI = {
         "company": "Компания",
         "contacts": "Контакты",
         "ga": "Сайт использует Google Analytics для анализа посещений.",
-        "tagline": "Предсказуемая регистрация — от подачи досье до разрешительного документа.",
+        "tagline": "Грамотная регистрация — от подачи досье до разрешительного документа.",
         "other_services": "Другие услуги",
         "other_h": "Нужна другая услуга?",
         "faq_eyebrow": "Вопросы и ответы",
@@ -462,7 +464,7 @@ SEO = {
         "en": {
             "title": "Regulatory Consultant in Uzbekistan — Product Registration | NSRP",
             "desc": "NSRP is a regulatory affairs consultancy in Tashkent: product registration in Uzbekistan for medicines, medical devices, cosmetics, supplements, food and household chemicals.",
-            "h1": "Predictable registration — from dossier submission to approval.",
+            "h1": "Registration done properly — from dossier submission to approval.",
             "lead": "Regulatory consultant in Uzbekistan for product registration — medicines, devices, cosmetics and more.",
             "faq": [
                 ("Can NSRP act on our behalf?",
@@ -478,7 +480,7 @@ SEO = {
         "ru": {
             "title": "Регуляторный консультант в Узбекистане — регистрация продукции | NSRP",
             "desc": "NSRP — регуляторный консультант в Ташкенте: регистрация продукции в Узбекистане — лекарства, медицинские изделия, косметика, БАД, пищевая продукция и бытовая химия.",
-            "h1": "Предсказуемая регистрация — от подачи досье до разрешительного документа.",
+            "h1": "Грамотная регистрация — от подачи досье до разрешительного документа.",
             "lead": "Регуляторный консультант в Узбекистане: регистрация лекарств, медицинских изделий, косметики, БАД и другой продукции.",
             "faq": [
                 ("Может ли NSRP действовать от нашего имени?",
@@ -787,11 +789,12 @@ FOUNDERS = [
 
 HOME = {
     "en": {
+        "mission": "Opening Uzbekistan to the world's best medicines, devices and products.",
         "what_eyebrow": "What we do",
         "what_h": "We sell certainty, <em>not paperwork.</em>",
         "what_lead": "Registration in Uzbekistan follows a defined sequence. The procedure is not complicated — executing it precisely, and explaining it clearly, every time, is.",
         "pillars": [
-            ("Predictable timelines", "Milestones agreed at the outset, with written reporting against them."),
+            ("Realistic timelines", "Milestones agreed at the outset, with written reporting against them."),
             ("Senior-led", "Every engagement is led personally by our Head of Regulatory Affairs."),
             ("Three working languages", "Russian, English and Uzbek — nothing lost between Tashkent and head office."),
             ("Pathway first", "Before any submission, we check simplified recognition and expedited routes."),
@@ -811,17 +814,28 @@ HOME = {
         ],
         "founders_eyebrow": "Founders",
         "founders_h": "Senior expertise, <em>personally engaged.</em>",
+        "company_eyebrow": "About NSRP",
+        "mission_label": "Our mission",
+        "vision_label": "Our vision",
+        "values_label": "Our values",
+        "vision": "A country where the world's best care arrives on time, and through the front door.",
+        "values": [
+            ("Integrity", "We work to international standards of business ethics: transparent, lawful, on the record."),
+            ("Clarity", "Honest timelines, early warnings, no surprises from our side."),
+            ("Partnership", "We stay with you from the first document to final approval."),
+        ],
         "contact_eyebrow": "Contact",
         "contact_h": "Every engagement begins with <em>a frank conversation.</em>",
         "rows": [("Regulatory questions", "zulayho@nsrp.uz"), ("Commercial questions", "jorabek@nsrp.uz")],
         "office": "Office",
     },
     "ru": {
+        "mission": "Открываем Узбекистану путь к лучшим лекарствам, медицинским изделиям и продуктам мира.",
         "what_eyebrow": "Чем мы занимаемся",
         "what_h": "Мы предлагаем определённость, <em>а не бумажную работу.</em>",
         "what_lead": "Регистрация в Узбекистане проходит чётко определённые этапы. Сама процедура несложна — сложно каждый раз выполнять её точно и ясно объяснять клиенту.",
         "pillars": [
-            ("Прогнозируемые сроки", "Контрольные точки согласуем в начале проекта и отчитываемся по ним письменно."),
+            ("Реалистичные сроки", "Контрольные точки согласуем в начале проекта и отчитываемся по ним письменно."),
             ("Опытные специалисты", "Каждый проект лично ведёт руководитель регуляторного направления."),
             ("Три рабочих языка", "Русский, английский и узбекский — ничего не теряется между Ташкентом и головным офисом."),
             ("Сначала — выбор пути", "До подачи досье проверяем возможность упрощённых и ускоренных процедур."),
@@ -841,6 +855,16 @@ HOME = {
         ],
         "founders_eyebrow": "Основатели",
         "founders_h": "Опыт и экспертиза — <em>с личным участием.</em>",
+        "company_eyebrow": "О компании",
+        "mission_label": "Наша миссия",
+        "vision_label": "Наше видение",
+        "values_label": "Наши ценности",
+        "vision": "Страна, куда лучшее в мировой медицине приходит вовремя и честным путём.",
+        "values": [
+            ("Добросовестность", "Мы работаем по международным стандартам деловой этики: прозрачно, законно, с фиксацией каждого шага."),
+            ("Ясность", "Честные сроки, своевременные предупреждения, никаких сюрпризов с нашей стороны."),
+            ("Партнёрство", "Мы рядом с вами от первого документа до итогового результата."),
+        ],
         "contact_eyebrow": "Контакты",
         "contact_h": "Каждый проект начинается <em>с откровенного разговора.</em>",
         "rows": [("Регуляторные вопросы", "zulayho@nsrp.uz"), ("Коммерческие вопросы", "jorabek@nsrp.uz")],
@@ -984,6 +1008,7 @@ def header(lang, path):
       </li>
       <li><a href="{home}#how">{t['how']}</a></li>
       <li><a href="{home}#founders">{t['founders']}</a></li>
+      <li><a href="{home}#company">{t['about']}</a></li>
     </ul>
     {lang_switch(lang, path)}
     <a class="btn btn-gold btn-sm btn-contact" href="{home}#contact">{t['contact']}</a>
@@ -994,6 +1019,7 @@ def header(lang, path):
       <li><a href="{home}#services">{t['services']}</a></li>
       <li><a href="{home}#how">{t['how']}</a></li>
       <li><a href="{home}#founders">{t['founders']}</a></li>
+      <li><a href="{home}#company">{t['about']}</a></li>
       <li><a href="{home}#contact">{t['contact']}</a></li>
     </ul>
     <p class="eyebrow mm-label">{t['all_services']}</p>
@@ -1028,6 +1054,7 @@ def footer(lang):
         <ul>
           <li><a href="{home}#how">{t['how']}</a></li>
           <li><a href="{home}#founders">{t['founders']}</a></li>
+          <li><a href="{home}#company">{t['about']}</a></li>
               <li><a href="{home}#contact">{t['contact']}</a></li>
         </ul>
       </div>
@@ -1127,6 +1154,7 @@ def render_home(lang):
     steps = "".join(f'<li class="step reveal" style="--d:{i}"><span class="step-num">{i + 1}</span><div><h3>{a}</h3><p>{b}</p></div></li>'
                     for i, (a, b) in enumerate(h["steps"]))
     founders = "".join(founder_card(lang, f, i) for i, f in enumerate(FOUNDERS))
+    values = "".join(f'<div class="pillar reveal" style="--d:{i}"><h3>{a}</h3><p>{b}</p></div>' for i, (a, b) in enumerate(h["values"]))
     rows = "".join(f'<div><dt>{a}</dt><dd><a href="mailto:{b}">{b}</a></dd></div>' for a, b in h["rows"])
     rows += f'<div><dt>WhatsApp</dt><dd><a href="{WHATSAPP}" target="_blank" rel="noopener"><span class="tel">{WHATSAPP_DISPLAY}</span></a></dd></div>'
     rows += f'<div><dt>{h["office"]}</dt><dd>{t["location"]}</dd></div>'
@@ -1181,6 +1209,16 @@ def render_home(lang):
   </div>
 </section>
 
+<section class="section bg-white" id="company" aria-label="{h['company_eyebrow']}">
+  <div class="wrap">
+    <p class="eyebrow reveal">{h['mission_label']}</p>
+    <h2 class="h2 mission reveal" style="--d:1">{h['mission']}</h2>
+    <p class="eyebrow company-label reveal">{h['vision_label']}</p>
+    <p class="vision reveal" style="--d:1">{h['vision']}</p>
+    <p class="eyebrow company-label reveal">{h['values_label']}</p>
+    <div class="pillars three">{values}</div>
+  </div>
+</section>
 
 <section class="section bg-deep" id="contact">
   <div class="wrap contact-grid">
